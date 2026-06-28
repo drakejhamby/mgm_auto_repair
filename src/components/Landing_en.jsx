@@ -1,7 +1,9 @@
+import mgmLogo from '../assets/mgm_logo.png';
+
 function Landing_en() {
     return(
     <div>
-        <h1>M.G.M Auto Repair</h1>
+        <img className="landing-logo" src={mgmLogo} alt="MGM Auto Repair" />
         <h2>Welcome!</h2>
     </div>
     )
