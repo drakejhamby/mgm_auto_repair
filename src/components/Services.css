@@ -79,8 +79,22 @@
 }
 
 @media (max-width: 640px) {
+    .services {
+        padding: 0;
+    }
+
+    .services > ul {
+        width: 100%;
+    }
+
+    .services > ul > li {
+        margin-bottom: 1rem;
+        padding: 0.7rem;
+    }
+
     .service-details {
         flex-direction: column;
+        gap: 0.85rem;
     }
 
     .service-category-image {
@@ -90,6 +104,21 @@
 
     .child_services {
         padding-left: 1rem;
+    }
+
+    .main_services {
+        font-size: 1.05rem;
+        padding-left: 0.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .services > h2 {
+        margin-bottom: 1rem;
+    }
+
+    .child_services {
+        padding-left: 0.9rem;
     }
 }
 

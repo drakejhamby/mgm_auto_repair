@@ -57,6 +57,19 @@ body {
   box-sizing: border-box;
 }
 
+@media (max-width: 640px) {
+  body {
+    display: block;
+  }
+
+  #root {
+    width: 100%;
+    margin: 0;
+    border-inline: none;
+    border-radius: 0;
+  }
+}
+
 h1,
 h2 {
   font-family: var(--heading);
