@@ -60,13 +60,15 @@ body {
 @media (max-width: 640px) {
   body {
     display: block;
+    padding: 0.45rem;
+    box-sizing: border-box;
   }
 
   #root {
-    width: 100%;
-    margin: 0;
-    border-inline: none;
-    border-radius: 0;
+    width: min(100%, 40rem);
+    margin: 0 auto;
+    border-inline: 1px solid var(--border);
+    border-radius: 0.8rem;
   }
 }
 

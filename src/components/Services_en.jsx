@@ -1,9 +1,21 @@
 import './Services.css';
-import { useState } from 'react';
-import { services_en } from './utils/service_lists';
+import { useEffect, useState } from 'react';
+import { service_images, services_en } from './utils/service_lists';
 
 function Services_en() {
     const [openCategories, setOpenCategories] = useState({});
+
+    useEffect(() => {
+        const preloadedImages = service_images.map((imageSource) => {
+            const image = new Image();
+            image.src = imageSource;
+            return image;
+        });
+
+        return () => {
+            preloadedImages.length = 0;
+        };
+    }, []);
 
     function handleCategoryToggle(categoryName) {
         setOpenCategories((prev) => ({

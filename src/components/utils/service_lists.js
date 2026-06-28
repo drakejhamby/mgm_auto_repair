@@ -214,4 +214,16 @@ const services_es = [
     }
 ];
 
-export { services_en, services_es };
+const service_images = [
+    generalImage,
+    brakesImage,
+    suspensionImage,
+    airConditioningImage,
+    coolingImage,
+    electricalImage,
+    exhaustImage,
+    preventiveImage,
+    otherImage
+];
+
+export { services_en, services_es, service_images };
