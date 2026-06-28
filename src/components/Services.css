@@ -13,11 +13,12 @@
 }
 
 .services > ul {
-    width: fit-content;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 .services > ul > li {
@@ -29,6 +30,7 @@
     border-radius: 0.9rem;
     background: linear-gradient(160deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.32));
     box-shadow: 0 4px 0 rgba(10, 27, 52, 0.12);
+    box-sizing: border-box;
 }
 
 .service-details {
@@ -76,6 +78,7 @@
     color: var(--accent-dark);
     border-left: 4px solid var(--accent-warm);
     padding-left: 0.6rem;
+    box-sizing: border-box;
 }
 
 @media (max-width: 640px) {
