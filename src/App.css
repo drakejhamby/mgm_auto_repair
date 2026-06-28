@@ -187,27 +187,30 @@
 
 @media (max-width: 640px) {
   .app {
-    padding: 1rem 0.9rem 1.7rem;
+    width: 100%;
+    padding: 0.9rem 1rem 1.6rem;
     gap: 1rem;
   }
 
   .app::before,
   .app::after {
-    inset: 0.2rem;
+    display: none;
   }
 
   .app-section {
-    max-width: 100%;
-    padding: 0.95rem 0.85rem;
+    width: 100%;
+    max-width: 36rem;
+    padding: 1rem 0.95rem;
     border-radius: 0.85rem;
+    box-sizing: border-box;
   }
 
   .app-section-about {
-    border-left-width: 4px;
+    border-left-width: 3px;
   }
 
   .app-section-services {
-    border-right-width: 4px;
+    border-right-width: 3px;
   }
 
   .about-block {
@@ -229,22 +232,14 @@
   }
 
   .landing-logo {
-    width: min(100%, 21rem);
+    width: min(100%, 19rem);
     margin-bottom: 0.5rem;
   }
 }
 
 @media (max-width: 420px) {
-  body {
-    padding: 0.3rem;
-  }
-
-  .app::after {
-    display: none;
-  }
-
   .app-section {
-    padding: 0.85rem 0.75rem;
+    padding: 0.9rem 0.8rem;
   }
 
   .landing-logo {
